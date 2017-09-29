@@ -1,0 +1,23 @@
+<br>
+<br>
+<div class="row">
+<table class="text-center table table-bordered table-striped table-centered responsive-table">
+  <thead directive1 class="thead-inverse">
+  <tr>
+    <td *ngFor="let HeaderField of fields">{{HeaderField}}</td>
+    <td>Modifier</td>
+    <td>Supprimer</td>
+  </tr>
+  </thead>
+  <tbody>
+  <!--chaque ligne du tableau-->
+  <tr appRowhover *ngFor="let LineArray of data">
+    <!--chaque colonne du tableau-->
+    <td *ngFor="let field of fields">{{getFieldValue(LineArray,field)}}</td>
+    <!--<td *ngFor="let field of fields">{{LineArray[field]}}</td>-->
+    <td><button class="btn btn-warning" (click)="EditOnClick(LineArray)">Modifier</button></td>
+    <td><button class="btn btn-danger" (click)="DeleteOnClick(LineArray)">Supprimer</button></td>
+  </tr>
+  </tbody>
+</table>
+</div>

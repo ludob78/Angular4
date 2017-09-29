@@ -1,0 +1,12 @@
+<app-search-component holder="Recherche Titre / Description" (onSearch)="getTodosByInput($event)" (onClear)="ngOnInit()"></app-search-component>
+<app-data-table [data]="dataTodos" [fields]="fieldsTodos" (deleteAction)="DeleteTodo($event)" (editAction)="EditTodo($event)"></app-data-table>
+<app-form [visible]="isEditing" [Fields]="Fields" [data]='currentTodo' (onSubmit)="SubmitTodo($event)"></app-form>
+
+<todos>
+    <todo
+            *ngFor="let todo of dataTodos"
+            [id]="todo.id"
+            [title]="todo.username"
+            [body]="todo.email"
+    ></todo>
+</todos>

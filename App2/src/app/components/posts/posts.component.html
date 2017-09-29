@@ -1,0 +1,2 @@
+<app-search-component holder="Recherche Titre / Description" (onSearch)="getTodosByInput($event)" (onClear)="ngOnInit()"></app-search-component>
+<app-data-table [data]="tpService.posts" [fields]="fieldsTodos"></app-data-table>

@@ -1,0 +1,31 @@
+<form>
+    <div class="form-group row">
+        <label directive1 for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control col-sm-3" id="inputEmail3" placeholder="Email">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+        <div class="col-sm-10">
+            <input type="password" class="form-control col-sm-3" id="inputPassword3" placeholder="Password">
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <div class="offset-sm-2 col-sm-10">
+            <button type="submit" class="btn btn-primary">Sign in</button>
+        </div>
+    </div>
+</form>
+<p directive1>Login here</p>
+<!--id entre crochet car number-->
+<todos>
+    <todo [id]="1" title="test titre1" body="test body1"></todo>
+    <todo [id]="2" title="test titre2" body="test body2"></todo>
+    <todo [id]="3" title="test titre3" body="test body3"></todo>
+    <todo [id]="4" title="test titre4" body="test body3"></todo>
+    <todo [id]="5" title="test titre5" body="test body3"></todo>
+    <todo [id]="7" title="test titre7" body="test body3"></todo>
+    <todo [id]="6" title="test titre6" body="test body3"></todo>
+</todos>
